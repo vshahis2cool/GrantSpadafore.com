@@ -18,7 +18,8 @@ nav {
 }
 
 .rubik-font {
-  font-family: "Rubik", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
 }
 
 #nav-links {
@@ -36,10 +37,12 @@ nav {
 }
 #nav-links .nav-link :hover:nth-child(1), #nav-links .nav-link :hover:nth-child(2) {
   transform: scale(1.1);
-  transition: transform 300ms;
 }
 #nav-links .nav-link :hover:nth-child(1) .nav-link-label, #nav-links .nav-link :hover:nth-child(2) .nav-link-label {
   transform: scale(1.1);
+}
+#nav-links .nav-link :hover:nth-child(1), #nav-links .nav-link :hover:nth-child(2) {
+  transition: transform 300ms;
 }
 
 .nav-link-label {
@@ -172,7 +175,7 @@ body[data-nav=true] > #nav-toggle > .close {
 
 .magic-text {
   animation: background-pan 3s ease-in-out infinite;
-  background: linear-gradient(to right, rgb(123, 31, 162), rgb(103, 58, 183), rgb(244, 143, 177), rgb(123, 31, 162));
+  background: linear-gradient(to right, rgb(123, 31, 162), rgb(103, 58, 183), rgb(225, 40, 214), rgb(123, 31, 162));
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -218,6 +221,8 @@ body {
   width: 100vw;
   margin: 0px;
   background-color: black;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
 }
 
 .content {
@@ -251,25 +256,32 @@ main {
 
 .chart {
   margin-top: 80px;
-  border: 1rem solid grey;
-  border-radius: 10px;
   padding: 0;
   width: 100%;
-  background-color: grey;
+  background-color: transparent;
 }
 .chart codersrank-skills-chart {
   --legend-text-color: red;
   --label-text-color: white;
   --legend-font-size: 12px;
-  --legend-font-family: "Rubik", sans-serif;
-  --legend-font-weight: 400;
-  --chart-bg-color:grey;
-  --axis-bg-color: white;
+  --legend-font-family: Proxima Nova, sans-serif;
+  --legend-font-weight: 600;
+  --chart-bg-color: transparent;
+  --axis-bg-color: transparent;
   --svg-height: 60vh;
 }
 
 p {
   font-size: 3rem;
+  color: rgb(230, 240, 255);
+}
+
+.text {
+  background-color: rgba(45, 45, 50, 0.78);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
 }
 
 @media (max-width: 800px) {

@@ -18,7 +18,8 @@ nav {
 }
 
 .rubik-font {
-  font-family: "Rubik", sans-serif;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 600;
 }
 
 #nav-links {
@@ -36,10 +37,12 @@ nav {
 }
 #nav-links .nav-link :hover:nth-child(1), #nav-links .nav-link :hover:nth-child(2) {
   transform: scale(1.1);
-  transition: transform 300ms;
 }
 #nav-links .nav-link :hover:nth-child(1) .nav-link-label, #nav-links .nav-link :hover:nth-child(2) .nav-link-label {
   transform: scale(1.1);
+}
+#nav-links .nav-link :hover:nth-child(1), #nav-links .nav-link :hover:nth-child(2) {
+  transition: transform 300ms;
 }
 
 .nav-link-label {

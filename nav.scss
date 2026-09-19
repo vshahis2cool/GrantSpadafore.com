@@ -18,7 +18,8 @@
     overflow: hidden;
   }
   .rubik-font {
-    font-family: "Rubik", sans-serif;
+    font-family: $font-family;
+    font-weight: $font-weight;
     }
   #nav-links {  
     display: flex;

@@ -11,6 +11,8 @@
   width: 100vw;
   margin: 0px;
   background-color: black;
+  font-family: $font-family;
+  font-weight: $font-weight;
 }
 .content{
   height: 100vh;
@@ -142,10 +144,8 @@ main {
       position: absolute;
       width:2rem;
       height:2rem;
-      :nth-child(1){
-        margin-left: 1330%;
-        margin-top: 5%;
-      }
+      right: 1.15ch;
+      top: -0.35em;
       animation: scale 3500ms ease linear;
       svg{
         display: block;
@@ -180,7 +180,7 @@ main {
         to right,
         $purple,
         $violet,
-        $pink,
+        rgb(225,40,214),
         $purple
       );
       background-size: 200%;
